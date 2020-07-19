@@ -1,0 +1,733 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"41 ./display7s.h
+[; ;./display7s.h: 41: void Sev_Seg_Disable(void);
+[v _Sev_Seg_Disable `(v ~T0 @X0 0 ef ]
+"28 ./Fan.h
+[; ;./Fan.h: 28:     void Fan_Stop(void);
+[v _Fan_Stop `(v ~T0 @X0 0 ef ]
+"27 ./Heater.h
+[; ;./Heater.h: 27:     void Heater_Stop(void);
+[v _Heater_Stop `(v ~T0 @X0 0 ef ]
+"27 ./Temp.h
+[; ;./Temp.h: 27:        uint16_t Temp_Sensor_ADC_Read(void) ;
+[v _Temp_Sensor_ADC_Read `(ui ~T0 @X0 0 ef ]
+"38 ./System.h
+[; ;./System.h: 38:   void Add_New_Temp(uint16_t* Array,uint16_t Newest_Value);
+[v _Add_New_Temp `(v ~T0 @X0 0 ef2`*ui`ui ]
+"39
+[; ;./System.h: 39:   uint16_t Calc_Temp_Avg(uint16_t * Array);
+[v _Calc_Temp_Avg `(ui ~T0 @X0 0 ef1`*ui ]
+"43 ./display7s.h
+[; ;./display7s.h: 43: void Sev_Seg_Write_99( uint16_t Num);
+[v _Sev_Seg_Write_99 `(v ~T0 @X0 0 ef1`ui ]
+"35 ./System.h
+[; ;./System.h: 35:   void Adjust_Temp(void);
+[v _Adjust_Temp `(v ~T0 @X0 0 ef ]
+"36 ./Buttons.h
+[; ;./Buttons.h: 36:     unsigned char Up_Pressed(void);
+[v _Up_Pressed `(uc ~T0 @X0 0 ef ]
+"37
+[; ;./Buttons.h: 37:     unsigned char Down_Pressed(void);
+[v _Down_Pressed `(uc ~T0 @X0 0 ef ]
+"26 ./Leds.h
+[; ;./Leds.h: 26:     void Heating_LED_Off(void) ;
+[v _Heating_LED_Off `(v ~T0 @X0 0 ef ]
+"23 ./EEPROM.h
+[; ;./EEPROM.h: 23:     void EEPROM_Write(uint8_t addr, uint8_t val);
+[v _EEPROM_Write `(v ~T0 @X0 0 ef2`uc`uc ]
+"42 ./display7s.h
+[; ;./display7s.h: 42: void Sev_Seg_Init(void );
+[v _Sev_Seg_Init `(v ~T0 @X0 0 ef ]
+"35 ./Buttons.h
+[; ;./Buttons.h: 35:     void Buttons_Init(void) ;
+[v _Buttons_Init `(v ~T0 @X0 0 ef ]
+"39
+[; ;./Buttons.h: 39:     void ON_Button_EXTI_Init(void);
+[v _ON_Button_EXTI_Init `(v ~T0 @X0 0 ef ]
+"26 ./Fan.h
+[; ;./Fan.h: 26:     void Fan_Init(void);
+[v _Fan_Init `(v ~T0 @X0 0 ef ]
+"25 ./Heater.h
+[; ;./Heater.h: 25:     void Heater_Init(void);
+[v _Heater_Init `(v ~T0 @X0 0 ef ]
+"26 ./Temp.h
+[; ;./Temp.h: 26:        void Temp_Sensor_ADC_Init(void) ;
+[v _Temp_Sensor_ADC_Init `(v ~T0 @X0 0 ef ]
+"24 ./Timer.h
+[; ;./Timer.h: 24:        void TMR1_Init(void);
+[v _TMR1_Init `(v ~T0 @X0 0 ef ]
+"25
+[; ;./Timer.h: 25:        void TMR0_Init(void);
+[v _TMR0_Init `(v ~T0 @X0 0 ef ]
+"24 ./Leds.h
+[; ;./Leds.h: 24:     void Heating_LED_Init(void) ;
+[v _Heating_LED_Init `(v ~T0 @X0 0 ef ]
+"22 ./EEPROM.h
+[; ;./EEPROM.h: 22:     void EEPROM_Init(void);
+[v _EEPROM_Init `(v ~T0 @X0 0 ef ]
+"40 ./System.h
+[; ;./System.h: 40:   void Temp_Array_Init(void);
+[v _Temp_Array_Init `(v ~T0 @X0 0 ef ]
+"26 ./Heater.h
+[; ;./Heater.h: 26:     void Heater_Start(void);
+[v _Heater_Start `(v ~T0 @X0 0 ef ]
+"27 ./Leds.h
+[; ;./Leds.h: 27:     void Heating_LED_Toggle(void) ;
+[v _Heating_LED_Toggle `(v ~T0 @X0 0 ef ]
+"27 ./Fan.h
+[; ;./Fan.h: 27:     void Fan_Start(void);
+[v _Fan_Start `(v ~T0 @X0 0 ef ]
+"25 ./Leds.h
+[; ;./Leds.h: 25:     void Heating_LED_On(void) ;
+[v _Heating_LED_On `(v ~T0 @X0 0 ef ]
+"2629 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 2629: extern volatile __bit PEIE __attribute__((address(0x5E)));
+[v _PEIE `Vb ~T0 @X0 0 e@94 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"218
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 218: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"280
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 280: __asm("PORTC equ 07h");
+[; <" PORTC equ 07h ;# ">
+"342
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 342: __asm("PORTD equ 08h");
+[; <" PORTD equ 08h ;# ">
+"404
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 404: __asm("PORTE equ 09h");
+[; <" PORTE equ 09h ;# ">
+"436
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 436: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"456
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 456: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"534
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 534: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"596
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 596: __asm("PIR2 equ 0Dh");
+[; <" PIR2 equ 0Dh ;# ">
+"636
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 636: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"643
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 643: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"650
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 650: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"657
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 657: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"732
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 732: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"739
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 739: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"810
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 810: __asm("SSPBUF equ 013h");
+[; <" SSPBUF equ 013h ;# ">
+"817
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 817: __asm("SSPCON equ 014h");
+[; <" SSPCON equ 014h ;# ">
+"887
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 887: __asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+"894
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 894: __asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+"901
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 901: __asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+"908
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 908: __asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+"966
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 966: __asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+"1061
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 1061: __asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+"1068
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 1068: __asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+"1075
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 1075: __asm("CCPR2 equ 01Bh");
+[; <" CCPR2 equ 01Bh ;# ">
+"1082
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 1082: __asm("CCPR2L equ 01Bh");
+[; <" CCPR2L equ 01Bh ;# ">
+"1089
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 1089: __asm("CCPR2H equ 01Ch");
+[; <" CCPR2H equ 01Ch ;# ">
+"1096
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 1096: __asm("CCP2CON equ 01Dh");
+[; <" CCP2CON equ 01Dh ;# ">
+"1154
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 1154: __asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+"1161
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 1161: __asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+"1257
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 1257: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"1327
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 1327: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"1377
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 1377: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1439
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 1439: __asm("TRISC equ 087h");
+[; <" TRISC equ 087h ;# ">
+"1501
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 1501: __asm("TRISD equ 088h");
+[; <" TRISD equ 088h ;# ">
+"1563
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 1563: __asm("TRISE equ 089h");
+[; <" TRISE equ 089h ;# ">
+"1620
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 1620: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1682
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 1682: __asm("PIE2 equ 08Dh");
+[; <" PIE2 equ 08Dh ;# ">
+"1722
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 1722: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1756
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 1756: __asm("SSPCON2 equ 091h");
+[; <" SSPCON2 equ 091h ;# ">
+"1818
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 1818: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1825
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 1825: __asm("SSPADD equ 093h");
+[; <" SSPADD equ 093h ;# ">
+"1832
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 1832: __asm("SSPSTAT equ 094h");
+[; <" SSPSTAT equ 094h ;# ">
+"2001
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 2001: __asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+"2082
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 2082: __asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+"2089
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 2089: __asm("CMCON equ 09Ch");
+[; <" CMCON equ 09Ch ;# ">
+"2159
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 2159: __asm("CVRCON equ 09Dh");
+[; <" CVRCON equ 09Dh ;# ">
+"2224
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 2224: __asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+"2231
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 2231: __asm("ADCON1 equ 09Fh");
+[; <" ADCON1 equ 09Fh ;# ">
+"2290
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 2290: __asm("EEDATA equ 010Ch");
+[; <" EEDATA equ 010Ch ;# ">
+"2297
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 2297: __asm("EEADR equ 010Dh");
+[; <" EEADR equ 010Dh ;# ">
+"2304
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 2304: __asm("EEDATH equ 010Eh");
+[; <" EEDATH equ 010Eh ;# ">
+"2311
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 2311: __asm("EEADRH equ 010Fh");
+[; <" EEADRH equ 010Fh ;# ">
+"2318
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 2318: __asm("EECON1 equ 018Ch");
+[; <" EECON1 equ 018Ch ;# ">
+"2363
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h: 2363: __asm("EECON2 equ 018Dh");
+[; <" EECON2 equ 018Dh ;# ">
+"50 ./System.h
+[; ;./System.h: 50:   uint16_t Desired_Temp ;
+[v _Desired_Temp `ui ~T0 @X0 1 e ]
+"51
+[; ;./System.h: 51:   uint16_t Actual_Temp ;
+[v _Actual_Temp `ui ~T0 @X0 1 e ]
+"53
+[; ;./System.h: 53:   volatile uint8_t Current_State;
+[v _Current_State `Vuc ~T0 @X0 1 e ]
+"54
+[; ;./System.h: 54:   volatile uint8_t SettingMode_counter ;
+[v _SettingMode_counter `Vuc ~T0 @X0 1 e ]
+"55
+[; ;./System.h: 55:   volatile uint8_t Toggle_indication = 0 ;
+[v _Toggle_indication `Vuc ~T0 @X0 1 e ]
+[i _Toggle_indication
+-> -> 0 `i `uc
+]
+"58
+[; ;./System.h: 58:   volatile uint8_t Temp_Measure_counter = 0 ;
+[v _Temp_Measure_counter `Vuc ~T0 @X0 1 e ]
+[i _Temp_Measure_counter
+-> -> 0 `i `uc
+]
+"59
+[; ;./System.h: 59:   volatile uint8_t Temp_Measure_indication = 1 ;
+[v _Temp_Measure_indication `Vuc ~T0 @X0 1 e ]
+[i _Temp_Measure_indication
+-> -> 1 `i `uc
+]
+"61
+[; ;./System.h: 61:   uint16_t Temp_Measurments[10];
+[v _Temp_Measurments `ui ~T0 @X0 -> 10 `i e ]
+"62
+[; ;./System.h: 62:   uint16_t First_Temp_Measured ;
+[v _First_Temp_Measured `ui ~T0 @X0 1 e ]
+"63
+[; ;./System.h: 63:   uint16_t Actual_Temp_Avg ;
+[v _Actual_Temp_Avg `ui ~T0 @X0 1 e ]
+"8 System.c
+[; ;System.c: 8: void Task_OFF_State(void){
+[v _Task_OFF_State `(v ~T0 @X0 1 ef ]
+{
+[e :U _Task_OFF_State ]
+[f ]
+"10
+[; ;System.c: 10:                    Sev_Seg_Disable() ;
+[e ( _Sev_Seg_Disable ..  ]
+"11
+[; ;System.c: 11:                    Fan_Stop();
+[e ( _Fan_Stop ..  ]
+"12
+[; ;System.c: 12:                    Heater_Stop();
+[e ( _Heater_Stop ..  ]
+"13
+[; ;System.c: 13:                    __asm("sleep");
+[; <" sleep ;# ">
+"16
+[; ;System.c: 16: }
+[e :UE 95 ]
+}
+"17
+[; ;System.c: 17: void Task_ON_State(void){
+[v _Task_ON_State `(v ~T0 @X0 1 ef ]
+{
+[e :U _Task_ON_State ]
+[f ]
+"23
+[; ;System.c: 23:                     if(Temp_Measure_indication == 1){
+[e $ ! == -> _Temp_Measure_indication `i -> 1 `i 97  ]
+{
+"25
+[; ;System.c: 25:                             Actual_Temp = Temp_Sensor_ADC_Read();
+[e = _Actual_Temp ( _Temp_Sensor_ADC_Read ..  ]
+"26
+[; ;System.c: 26:                             Add_New_Temp(Temp_Measurments,Actual_Temp);
+[e ( _Add_New_Temp (2 , &U _Temp_Measurments _Actual_Temp ]
+"27
+[; ;System.c: 27:                             Actual_Temp_Avg = Calc_Temp_Avg(Temp_Measurments);
+[e = _Actual_Temp_Avg ( _Calc_Temp_Avg (1 &U _Temp_Measurments ]
+"28
+[; ;System.c: 28:                             Temp_Measure_indication = 0 ;
+[e = _Temp_Measure_indication -> -> 0 `i `uc ]
+"29
+[; ;System.c: 29:                     }
+}
+[e :U 97 ]
+"31
+[; ;System.c: 31:                     Sev_Seg_Write_99(Actual_Temp);
+[e ( _Sev_Seg_Write_99 (1 _Actual_Temp ]
+"32
+[; ;System.c: 32:                     Adjust_Temp();
+[e ( _Adjust_Temp ..  ]
+"34
+[; ;System.c: 34:                      if(Up_Pressed() == 1 || Down_Pressed() == 1)
+[e $ ! || == -> ( _Up_Pressed ..  `i -> 1 `i == -> ( _Down_Pressed ..  `i -> 1 `i 98  ]
+"35
+[; ;System.c: 35:                        {
+{
+"36
+[; ;System.c: 36:                       Sev_Seg_Disable();
+[e ( _Sev_Seg_Disable ..  ]
+"37
+[; ;System.c: 37:                       SettingMode_counter = 0 ;
+[e = _SettingMode_counter -> -> 0 `i `uc ]
+"38
+[; ;System.c: 38:                       Current_State = 2 ;
+[e = _Current_State -> -> 2 `i `uc ]
+"40
+[; ;System.c: 40:                        }
+}
+[e :U 98 ]
+"41
+[; ;System.c: 41: }
+[e :UE 96 ]
+}
+"42
+[; ;System.c: 42: void Task_ChangeTemp_State(void){
+[v _Task_ChangeTemp_State `(v ~T0 @X0 1 ef ]
+{
+[e :U _Task_ChangeTemp_State ]
+[f ]
+"44
+[; ;System.c: 44:                       Fan_Stop();
+[e ( _Fan_Stop ..  ]
+"45
+[; ;System.c: 45:                       Heater_Stop();
+[e ( _Heater_Stop ..  ]
+"46
+[; ;System.c: 46:                       Heating_LED_Off();
+[e ( _Heating_LED_Off ..  ]
+"49
+[; ;System.c: 49:                       if(Toggle_indication == 0 ){
+[e $ ! == -> _Toggle_indication `i -> 0 `i 100  ]
+{
+"50
+[; ;System.c: 50:                           Sev_Seg_Write_99(Desired_Temp);
+[e ( _Sev_Seg_Write_99 (1 _Desired_Temp ]
+"51
+[; ;System.c: 51:                       }else{
+}
+[e $U 101  ]
+[e :U 100 ]
+{
+"52
+[; ;System.c: 52:                           Sev_Seg_Disable();
+[e ( _Sev_Seg_Disable ..  ]
+"53
+[; ;System.c: 53:                       }
+}
+[e :U 101 ]
+"55
+[; ;System.c: 55:                       if( ( Up_Pressed() == 1 ) && (Desired_Temp < 75) )
+[e $ ! && == -> ( _Up_Pressed ..  `i -> 1 `i < _Desired_Temp -> -> 75 `i `ui 102  ]
+"56
+[; ;System.c: 56:                       {
+{
+"57
+[; ;System.c: 57:                           SettingMode_counter = 0 ;
+[e = _SettingMode_counter -> -> 0 `i `uc ]
+"58
+[; ;System.c: 58:                           Desired_Temp +=5 ;
+[e =+ _Desired_Temp -> -> 5 `i `ui ]
+"59
+[; ;System.c: 59:                       }
+}
+[e :U 102 ]
+"60
+[; ;System.c: 60:                       if ( (Down_Pressed() == 1) && (Desired_Temp > 35) )
+[e $ ! && == -> ( _Down_Pressed ..  `i -> 1 `i > _Desired_Temp -> -> 35 `i `ui 103  ]
+"61
+[; ;System.c: 61:                       {
+{
+"62
+[; ;System.c: 62:                           SettingMode_counter = 0 ;
+[e = _SettingMode_counter -> -> 0 `i `uc ]
+"63
+[; ;System.c: 63:                          Desired_Temp -=5 ;
+[e =- _Desired_Temp -> -> 5 `i `ui ]
+"64
+[; ;System.c: 64:                       }
+}
+[e $U 104  ]
+"65
+[; ;System.c: 65:                       else
+[e :U 103 ]
+"66
+[; ;System.c: 66:                       {
+{
+"68
+[; ;System.c: 68:                       }
+}
+[e :U 104 ]
+"70
+[; ;System.c: 70:                       EEPROM_Write(0x00,Desired_Temp);
+[e ( _EEPROM_Write (2 , -> -> 0 `i `uc -> _Desired_Temp `uc ]
+"71
+[; ;System.c: 71: }
+[e :UE 99 ]
+}
+"73
+[; ;System.c: 73: void Sys_Init(){
+[v _Sys_Init `(v ~T0 @X0 1 ef ]
+{
+[e :U _Sys_Init ]
+[f ]
+"79
+[; ;System.c: 79:        Sev_Seg_Init();
+[e ( _Sev_Seg_Init ..  ]
+"80
+[; ;System.c: 80:        Buttons_Init();
+[e ( _Buttons_Init ..  ]
+"81
+[; ;System.c: 81:        ON_Button_EXTI_Init();
+[e ( _ON_Button_EXTI_Init ..  ]
+"82
+[; ;System.c: 82:        Fan_Init();
+[e ( _Fan_Init ..  ]
+"83
+[; ;System.c: 83:        Heater_Init();
+[e ( _Heater_Init ..  ]
+"84
+[; ;System.c: 84:        Temp_Sensor_ADC_Init();
+[e ( _Temp_Sensor_ADC_Init ..  ]
+"85
+[; ;System.c: 85:        TMR1_Init();
+[e ( _TMR1_Init ..  ]
+"86
+[; ;System.c: 86:        TMR0_Init();
+[e ( _TMR0_Init ..  ]
+"87
+[; ;System.c: 87:        Heating_LED_Init();
+[e ( _Heating_LED_Init ..  ]
+"88
+[; ;System.c: 88:        EEPROM_Init();
+[e ( _EEPROM_Init ..  ]
+"89
+[; ;System.c: 89:        Temp_Array_Init();
+[e ( _Temp_Array_Init ..  ]
+"90
+[; ;System.c: 90:        Current_State = 0 ;
+[e = _Current_State -> -> 0 `i `uc ]
+"91
+[; ;System.c: 91:        Desired_Temp = 60;
+[e = _Desired_Temp -> -> 60 `i `ui ]
+"92
+[; ;System.c: 92:        EEPROM_Write(0x00 ,60 );
+[e ( _EEPROM_Write (2 , -> -> 0 `i `uc -> -> 60 `i `uc ]
+"95
+[; ;System.c: 95: }
+[e :UE 105 ]
+}
+"101
+[; ;System.c: 101: void Adjust_Temp(void){
+[v _Adjust_Temp `(v ~T0 @X0 1 ef ]
+{
+[e :U _Adjust_Temp ]
+[f ]
+"105
+[; ;System.c: 105:     if( (Desired_Temp < Actual_Temp_Avg + 1 ) && (Desired_Temp > Actual_Temp_Avg - 1 ) )
+[e $ ! && < _Desired_Temp + _Actual_Temp_Avg -> -> 1 `i `ui > _Desired_Temp - _Actual_Temp_Avg -> -> 1 `i `ui 107  ]
+"106
+[; ;System.c: 106:     {
+{
+"107
+[; ;System.c: 107:          Fan_Stop();
+[e ( _Fan_Stop ..  ]
+"108
+[; ;System.c: 108:          Heater_Stop() ;
+[e ( _Heater_Stop ..  ]
+"109
+[; ;System.c: 109:          Heating_LED_Off();
+[e ( _Heating_LED_Off ..  ]
+"110
+[; ;System.c: 110:     }
+}
+[e $U 108  ]
+"111
+[; ;System.c: 111:     else if( Desired_Temp > Actual_Temp_Avg + 1 ){
+[e :U 107 ]
+[e $ ! > _Desired_Temp + _Actual_Temp_Avg -> -> 1 `i `ui 109  ]
+{
+"112
+[; ;System.c: 112:         Fan_Stop();
+[e ( _Fan_Stop ..  ]
+"113
+[; ;System.c: 113:         Heater_Start();
+[e ( _Heater_Start ..  ]
+"114
+[; ;System.c: 114:         if(Toggle_indication == 0 ){
+[e $ ! == -> _Toggle_indication `i -> 0 `i 110  ]
+{
+"115
+[; ;System.c: 115:         Heating_LED_Toggle();
+[e ( _Heating_LED_Toggle ..  ]
+"116
+[; ;System.c: 116:         }
+}
+[e :U 110 ]
+"119
+[; ;System.c: 119:     }
+}
+[e $U 111  ]
+"120
+[; ;System.c: 120:     else if ( Desired_Temp < Actual_Temp_Avg - 1 ){
+[e :U 109 ]
+[e $ ! < _Desired_Temp - _Actual_Temp_Avg -> -> 1 `i `ui 112  ]
+{
+"121
+[; ;System.c: 121:          Fan_Start();
+[e ( _Fan_Start ..  ]
+"122
+[; ;System.c: 122:          Heater_Stop() ;
+[e ( _Heater_Stop ..  ]
+"123
+[; ;System.c: 123:          Heating_LED_On();
+[e ( _Heating_LED_On ..  ]
+"125
+[; ;System.c: 125:     }
+}
+[e :U 112 ]
+[e :U 111 ]
+[e :U 108 ]
+"130
+[; ;System.c: 130: }
+[e :UE 106 ]
+}
+"137
+[; ;System.c: 137: void Add_New_Temp(uint16_t* Array,uint16_t Newest_Value){
+[v _Add_New_Temp `(v ~T0 @X0 1 ef2`*ui`ui ]
+{
+[e :U _Add_New_Temp ]
+[v _Array `*ui ~T0 @X0 1 r1 ]
+[v _Newest_Value `ui ~T0 @X0 1 r2 ]
+[f ]
+"140
+[; ;System.c: 140:     for(uint8_t element = 10 -1 ; element > 0 ; element -- ){
+{
+[v _element `uc ~T0 @X0 1 a ]
+[e = _element -> - -> 10 `i -> 1 `i `uc ]
+[e $ > -> _element `i -> 0 `i 114  ]
+[e $U 115  ]
+[e :U 114 ]
+{
+"141
+[; ;System.c: 141:         Array[element] = Array[element -1];
+[e = *U + _Array * -> _element `ux -> -> # *U _Array `ui `ux *U + _Array * -> - -> _element `i -> 1 `i `x -> -> # *U _Array `i `x ]
+"142
+[; ;System.c: 142:     }
+}
+[e -- _element -> -> 1 `i `uc ]
+[e $ > -> _element `i -> 0 `i 114  ]
+[e :U 115 ]
+}
+"143
+[; ;System.c: 143:     Array[0] = Newest_Value ;
+[e = *U + _Array * -> -> 0 `i `x -> -> # *U _Array `i `x _Newest_Value ]
+"144
+[; ;System.c: 144: }
+[e :UE 113 ]
+}
+"151
+[; ;System.c: 151: uint16_t Calc_Temp_Avg(uint16_t * Array){
+[v _Calc_Temp_Avg `(ui ~T0 @X0 1 ef1`*ui ]
+{
+[e :U _Calc_Temp_Avg ]
+[v _Array `*ui ~T0 @X0 1 r1 ]
+[f ]
+"153
+[; ;System.c: 153:     uint16_t Sum = 0 ;
+[v _Sum `ui ~T0 @X0 1 a ]
+[e = _Sum -> -> 0 `i `ui ]
+"154
+[; ;System.c: 154:      uint16_t Avg ;
+[v _Avg `ui ~T0 @X0 1 a ]
+"156
+[; ;System.c: 156:     for(uint8_t element = 0 ; element < 10 ; element ++ ){
+{
+[v _element `uc ~T0 @X0 1 a ]
+[e = _element -> -> 0 `i `uc ]
+[e $ < -> _element `i -> 10 `i 118  ]
+[e $U 119  ]
+[e :U 118 ]
+{
+"157
+[; ;System.c: 157:         Sum = Sum + Array[element] ;
+[e = _Sum + _Sum *U + _Array * -> _element `ux -> -> # *U _Array `ui `ux ]
+"158
+[; ;System.c: 158:     }
+}
+[e ++ _element -> -> 1 `i `uc ]
+[e $ < -> _element `i -> 10 `i 118  ]
+[e :U 119 ]
+}
+"159
+[; ;System.c: 159:     Avg = (uint16_t) Sum/10 ;
+[e = _Avg / _Sum -> -> 10 `i `ui ]
+"160
+[; ;System.c: 160:     return Avg;
+[e ) _Avg ]
+[e $UE 117  ]
+"161
+[; ;System.c: 161: }
+[e :UE 117 ]
+}
+"166
+[; ;System.c: 166: void Temp_Array_Init(void){
+[v _Temp_Array_Init `(v ~T0 @X0 1 ef ]
+{
+[e :U _Temp_Array_Init ]
+[f ]
+"172
+[; ;System.c: 172:         First_Temp_Measured = Temp_Sensor_ADC_Read();
+[e = _First_Temp_Measured ( _Temp_Sensor_ADC_Read ..  ]
+"174
+[; ;System.c: 174:        for(uint8_t i =0 ; i<10 ; i++)
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 10 `i 122  ]
+[e $U 123  ]
+[e :U 122 ]
+"175
+[; ;System.c: 175:        {
+{
+"176
+[; ;System.c: 176:           Temp_Measurments[i] = First_Temp_Measured ;
+[e = *U + &U _Temp_Measurments * -> _i `ux -> -> # *U &U _Temp_Measurments `ui `ux _First_Temp_Measured ]
+"177
+[; ;System.c: 177:        }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 10 `i 122  ]
+[e :U 123 ]
+}
+"181
+[; ;System.c: 181:          Actual_Temp_Avg = Calc_Temp_Avg(Temp_Measurments);
+[e = _Actual_Temp_Avg ( _Calc_Temp_Avg (1 &U _Temp_Measurments ]
+"182
+[; ;System.c: 182: }
+[e :UE 121 ]
+}
+"187
+[; ;System.c: 187: void Disable_Interrupt(void){
+[v _Disable_Interrupt `(v ~T0 @X0 1 ef ]
+{
+[e :U _Disable_Interrupt ]
+[f ]
+"188
+[; ;System.c: 188:      PEIE=0;
+[e = _PEIE -> -> 0 `i `b ]
+"190
+[; ;System.c: 190: }
+[e :UE 125 ]
+}
+"191
+[; ;System.c: 191: void Enable_Interrupt(void){
+[v _Enable_Interrupt `(v ~T0 @X0 1 ef ]
+{
+[e :U _Enable_Interrupt ]
+[f ]
+"192
+[; ;System.c: 192:      PEIE=1;
+[e = _PEIE -> -> 1 `i `b ]
+"194
+[; ;System.c: 194: }
+[e :UE 126 ]
+}
