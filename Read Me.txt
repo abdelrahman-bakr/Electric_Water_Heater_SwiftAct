@@ -1,0 +1,20 @@
+Electric_Water_Heater File has the main functoin and ISR 
+RB0 is ON/OFF Button 
+RB1 is UP button 
+RB2 is DOWN button  
+RB7 is Heating Element Led 
+the Final Version Is SwiftAct_012 and the rest versions are not included in delievry folder 
+
+
+SwiftAct001 --->  Implemented 7 Seg Display and Buttons and ADC Functionality 
+SwiftAct002 --->  Added Timer1 Functoinality 
+SwiftAct003 --->  Implemented ON and OFF states 
+SwiftAct004 --->  implemented Change Temp State 
+SwiftAct005 --->  first try to Work with EEPROM (xx)
+SwiftAct006 --->  first descent working version (No EEPROM)
+SwiftAct007 --->  Implemented EEPROM and I2c Driver 
+SwiftAct008 --->  added EEPROM functionality "saving the desired Temp once set "
+SwiftAct009 --->  added Requirment of "Measureing the Temp each 100 ms "  " seems to be Slower :( "
+SwiftAct010 --->  Shared global variables are declared volatile + Added taking average of last 10 Readings "messed it up"  
+SwiftAct011 --->  canceld 2 requirments (measure only each 100 ms"Fixed" (wasn`t calling Timer0 init function :) ) + last 10 readings average) + Go to sleep in Off State "power saving"
+SwiftAct012 --->  Fixed the 2 Requirments  now all Requiremnts are implemnted  + Added more Comments 
